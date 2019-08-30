@@ -27,16 +27,18 @@ void loop()
 {
   if(myGPS.available())
   {
-    Serial.print(myGPS.utc);       Serial.print(" | ");
+    Serial.print(myGPS.utc_year);  Serial.print(" | ");
+    Serial.print(myGPS.utc_month); Serial.print(" | ");
+    Serial.print(myGPS.utc_day);   Serial.print(" | ");
+    Serial.print(myGPS.utc_hour);  Serial.print(" | ");
+    Serial.print(myGPS.utc_min);   Serial.print(" | ");
+    Serial.print(myGPS.utc_sec);   Serial.print(" | ");
     Serial.print(myGPS.navStatus); Serial.print(" | ");
-    Serial.print(myGPS.lat);       Serial.print(" | ");
-    Serial.print(myGPS.latDir);    Serial.print(" | ");
-    Serial.print(myGPS.lon);       Serial.print(" | ");
-    Serial.print(myGPS.lonDir);    Serial.print(" | ");
+    Serial.print(myGPS.lat_dd);    Serial.print(" | ");
+    Serial.print(myGPS.lon_dd);    Serial.print(" | ");
     Serial.print(myGPS.sog_knots); Serial.print(" | ");
     Serial.print(myGPS.cog_true);  Serial.print(" | ");
     Serial.println();
   }
 }
-
 
