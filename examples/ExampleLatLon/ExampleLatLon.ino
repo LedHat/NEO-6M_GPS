@@ -33,7 +33,6 @@ void loop()
     Serial.print(myGPS.utc_hour);  Serial.print(" | ");
     Serial.print(myGPS.utc_min);   Serial.print(" | ");
     Serial.print(myGPS.utc_sec);   Serial.print(" | ");
-    Serial.print(myGPS.navStatus); Serial.print(" | ");
     Serial.print(myGPS.lat_dd);    Serial.print(" | ");
     Serial.print(myGPS.lon_dd);    Serial.print(" | ");
     Serial.print(myGPS.sog_knots); Serial.print(" | ");
